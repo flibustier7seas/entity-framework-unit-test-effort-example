@@ -14,6 +14,6 @@ public void Test()
         .Apply();
 
     var contacts = Query.For<Contact>().ToList();
-    Assert.AreEqual(products.Count, 4);
+    Assert.AreEqual(contacts.Count, 4);
 }
 ```
