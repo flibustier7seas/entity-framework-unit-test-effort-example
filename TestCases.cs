@@ -18,8 +18,8 @@ namespace EntityFrameworkEffort
                      new Contact { Name = "Pear" })
                 .Apply();
 
-            var products = Query.For<Contact>().ToList();
-            Assert.AreEqual(products.Count, 4);
+            var contacts = Query.For<Contact>().ToList();
+            Assert.AreEqual(contacts.Count, 4);
         }
     }
 }
